@@ -5,6 +5,7 @@
     .bg-#{$key}{
         background-color: $val;
     }
+    @if($val != black & $val != white){
     // light variations
 
         @for $i from 1 through 9 {
@@ -25,4 +26,5 @@
             }
     }
 
+ }
  }
